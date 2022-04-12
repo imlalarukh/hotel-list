@@ -15,8 +15,6 @@ const Home: React.FunctionComponent<HomeProps> = (props: HomeProps) => {
   const [sort, setSort] = useState("");
 
   const sortData = (type: string) => {
-    console.log(`sorting ${type}`);
-
     var sorted: IHotelData[] = hotelsData.sort((x, y) => {
       if (
         type == "priceDescending"
@@ -34,7 +32,6 @@ const Home: React.FunctionComponent<HomeProps> = (props: HomeProps) => {
       }
       return 0;
     });
-    console.log(`sorted ${type} data`, sorted);
     setHotelsData(sorted);
   };
 

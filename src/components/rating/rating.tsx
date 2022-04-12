@@ -1,7 +1,6 @@
 import * as React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import * as Styled from "./styled";
-import { v4 as uuid } from "uuid";
 
 interface RatingProps {
   rating: number;
@@ -29,12 +28,6 @@ const Rating: React.FunctionComponent<RatingProps> = (props: RatingProps) => {
   const [emptyIconCount, setEmptyIconCount] = useState(
     Math.floor(totalStars - props.rating)
   );
-
-  useEffect(() => {
-    console.log("full", Math.trunc(props.rating));
-    console.log("half", props.rating - Math.floor(props.rating) > 0 ? 1 : 0);
-    console.log("empty", Math.floor(totalStars - props.rating));
-  }, [props.rating]);
 
   return (
     <>
