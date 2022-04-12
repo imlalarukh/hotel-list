@@ -28,3 +28,5 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Currently this project is not responsive and is developed for desktop screens only
 
 Testing coverage is not 100%
+
+More time would have allowed me to follow [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
